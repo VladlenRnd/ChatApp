@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Portable.Enum;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,8 +9,7 @@ namespace Portable.MainViper.Interface
     {
         IPresenterLogin _presenter { get; }
 
-        string GetLogin();
-        string GetPass();
+        AuthResponse SetLoginData(string login,string pass);
 
     }
 }
