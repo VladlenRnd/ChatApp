@@ -1,0 +1,9 @@
+﻿{
+  "Languages": {
+    "LngLblLogin": "Логин",
+    "LngLblPass": "Пароль",
+    "LngBtnSignIn": "Вход",
+    "LngBtnSignUp": "Регистрация",
+    "LngLblLanguage": "Язык"
+  }
+}

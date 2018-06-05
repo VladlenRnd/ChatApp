@@ -1,0 +1,9 @@
+﻿{
+  "Languages": {
+    "LngLblLogin": "Login",
+    "LngLblPass": "Password",
+    "LngBtnSignIn": "Sign In",
+    "LngBtnSignUp": "Sign Out",
+    "LngLblLanguage": "Language"
+  }
+}
