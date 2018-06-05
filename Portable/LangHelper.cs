@@ -11,6 +11,8 @@ namespace Portable
     {
         public LangHelper(string locale)
         {
+            throw new NotImplementedException();
+
             I18N.Current
                     .SetFallbackLocale(locale)
                     .Init(GetType().GetTypeInfo().Assembly);
@@ -19,30 +21,35 @@ namespace Portable
 
         public string GetLngLoginTxt(string locale)
         {
+            throw new NotImplementedException();
             SetLocale(locale);
             return "LblLogin".Translate();
         }
 
         public string GetLngPassTxt(string locale)
         {
+            throw new NotImplementedException();
             SetLocale(locale);
             return "LblPass".Translate();
         }
 
         public string GetLngBtnInTxt(string locale)
         {
+            throw new NotImplementedException();
             SetLocale(locale);
             return "btnSignIn".Translate();
         }
 
         public string GetLngBtnUpTxt(string locale)
         {
+            throw new NotImplementedException();
             SetLocale(locale);
             return "btnSignOut".Translate();
         }
 
         public string GetLngLanguageTxt(string locale)
         {
+            throw new NotImplementedException();
             SetLocale(locale);
             return "lblLanguage".Translate();
         }
@@ -50,6 +57,7 @@ namespace Portable
 
         private void SetLocale(string locale)
         {
+            throw new NotImplementedException();
             I18N.Current
                    .SetFallbackLocale(locale)
                    .Init(GetType().GetTypeInfo().Assembly);

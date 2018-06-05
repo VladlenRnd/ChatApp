@@ -16,14 +16,6 @@ namespace Portable.MainViper.Interactor
             throw new NotImplementedException();
         }
 
-        private CodeValidate ValidateLogin(string login)
-        {
-            throw new NotImplementedException();
-        }
-
-        private CodeValidate ValidatePassword(string pass)
-        {
-            throw new NotImplementedException();
-        }
+     
     }
 }

@@ -35,26 +35,6 @@ namespace Tests.MainLogin
             Assert.AreEqual(response, act);      
         }
 
-        [TestCase("", CodeValidate.EmptyField, TestName = "ValidateLogin 1 Result EmptyField")]
-        [TestCase(" ", CodeValidate.EmptyField, TestName = "ValidateLogin 2 Result EmptyField")]
-
-        [TestCase("`", CodeValidate.UnresolvedСharacters, TestName = "ValidateLogin 1 Result UnresolvedСharacters")]
-        [TestCase("`admin`", CodeValidate.UnresolvedСharacters, TestName = "ValidateLogin 2 Result UnresolvedСharacters")]
-
-        [TestCase("Admin", CodeValidate.OK, TestName = "ValidateLogin 1 Result Ok")]
-        [TestCase("admin", CodeValidate.OK, TestName = "ValidateLogin 2 Result Ok")]
-        [TestCase(" admin", CodeValidate.OK, TestName = "ValidateLogin 3 Result Ok")]
-        [TestCase("admin ", CodeValidate.OK, TestName = "ValidateLogin 4 Result Ok")]
-        public void ValidateLoginTest(string login, CodeValidate exp)
-        {
-            MethodInfo methodInfo = typeof(InteractorLogin).GetMethod("ValidateLogin", BindingFlags.NonPublic | BindingFlags.Instance);
-            var act = methodInfo.Invoke(_interactor, new object[] { login});
-            Assert.AreEqual(exp, act);
-        }
-
-
-
-
 
     }
 }

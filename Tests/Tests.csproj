@@ -68,6 +68,8 @@
     <Compile Include="MainLogin\InteractorTest.cs" />
     <Compile Include="MainLogin\PresenterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LangHelperTest.cs" />
+    <Compile Include="ValidateTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
