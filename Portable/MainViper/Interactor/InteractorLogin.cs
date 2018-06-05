@@ -16,12 +16,12 @@ namespace Portable.MainViper.Interactor
             throw new NotImplementedException();
         }
 
-        private bool ValidateLogin(string login)
+        private CodeValidate ValidateLogin(string login)
         {
             throw new NotImplementedException();
         }
 
-        private bool ValidatePassword(string pass)
+        private CodeValidate ValidatePassword(string pass)
         {
             throw new NotImplementedException();
         }
