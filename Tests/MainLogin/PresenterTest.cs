@@ -12,21 +12,23 @@ namespace Tests.MainLogin
     {
 
         private IPresenterLogin _presenter;
-        private Mock<IRouter> _router;
-        private Mock<ILoginView> _view;
+        private Mock<IRouter> _routerMock;
+        private Mock<ILoginView> _viewMock;
+        private Mock<ILangHelper> _helperMock;
 
         [SetUp]
         public void Setup()
         {
-            _view = new Mock<ILoginView>(MockBehavior.Strict);
-            _router = new Mock<IRouter>(MockBehavior.Strict);
-            _presenter = new PresenterLogin(_view.Object);
+            _viewMock = new Mock<ILoginView>(MockBehavior.Strict);
+            _routerMock = new Mock<IRouter>(MockBehavior.Strict);
+            _helperMock = new Mock<ILangHelper>(MockBehavior.Strict);
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object);
         }
 
         [Test]
         public void TestNotNull()
         {
-            _presenter = new PresenterLogin(_view.Object);
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object);
             Assert.NotNull(_presenter);
         }
 
@@ -34,11 +36,11 @@ namespace Tests.MainLogin
         [Test]
         public void GoToChatAny()
         {
-            _router.Setup(f => f.GoToChat(It.IsAny<int>()));
-            _presenter = new PresenterLogin(_view.Object);
-            _presenter.Router = _router.Object;
+            _routerMock.Setup(f => f.GoToChat(It.IsAny<int>()));
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object);
+            _presenter.Router = _routerMock.Object;
             _presenter.GoToChat(It.IsAny<int>());
-            _router.Verify(f => f.GoToChat(It.IsAny<int>()));
+            _routerMock.Verify(f => f.GoToChat(It.IsAny<int>()));
         }
 
 
@@ -51,11 +53,11 @@ namespace Tests.MainLogin
         [TestCase(4, TestName = "GoToChatNotAny: ID = 4")]
         public void GoToChatNotAnyTest(int id)
         {
-            _router.Setup(f => f.GoToChat(It.IsAny<int>()));
-            _presenter = new PresenterLogin(_view.Object);
-            _presenter.Router = _router.Object;
+            _routerMock.Setup(f => f.GoToChat(It.IsAny<int>()));
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object);
+            _presenter.Router = _routerMock.Object;
             _presenter.GoToChat(id);
-            _router.Verify(f => f.GoToChat(id));
+            _routerMock.Verify(f => f.GoToChat(id));
         }
 
 

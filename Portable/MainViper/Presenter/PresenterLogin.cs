@@ -20,7 +20,7 @@ namespace Portable.MainViper.Presenter
 
         public PresenterLogin(ILoginView view,ILangHelper helper)
         {
-           // throw new NotImplementedException();
+            throw new NotImplementedException();
            // _view = view;
            // _view.ChangeLangAct += _view_ChangeLangAct;
           //  _locales = helper;

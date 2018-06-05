@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using NUnit.Framework;
 using Portable.Enum;
 using Portable.MainViper.Interactor;
@@ -19,7 +20,7 @@ namespace Tests.MainLogin
         }
 
 
-        /*
+        
         [TestCase("","",AuthResponse.InvelidData,TestName = "Set data login Result:InvelidData 0")]
         [TestCase("Admin", "", AuthResponse.InvelidData, TestName = "Set data login Result:InvelidData 1")]
         [TestCase("", "Admin", AuthResponse.InvelidData, TestName = "Set data login Result:InvelidData 2")]
@@ -29,10 +30,11 @@ namespace Tests.MainLogin
         [TestCase("Admin", "Admin123", AuthResponse.AccessError, TestName = "Set data login Result:AccessError 2")]
         public void SetDataLoginTest(string login,string pass, AuthResponse response)
         {
-            var act = _interactor.SetLoginData(login, pass);
+            MethodInfo methodInfo = typeof(InteractorLogin).GetMethod("GetAccess", BindingFlags.NonPublic | BindingFlags.Instance);
+            var act = methodInfo.Invoke(_interactor,new object[] { login, pass });
             Assert.AreEqual(response, act);      
         }
-        */
+        
 
         
 
