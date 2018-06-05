@@ -10,7 +10,7 @@ namespace Portable.MainViper.Presenter
     {
         public IRouter Router => throw new NotImplementedException();
 
-        public event Action OnSingIn;
+        public event Action<string,string> OnSingIn;
         public event Action OnSingUp;
 
         public string GetLogin()
