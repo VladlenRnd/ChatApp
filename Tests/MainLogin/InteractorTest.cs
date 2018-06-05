@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using Portable.Enum;
+using Portable.MainViper.Interactor;
 using Portable.MainViper.Interface;
 
 namespace Tests.MainLogin
@@ -13,7 +14,9 @@ namespace Tests.MainLogin
 
         [SetUp]
        public void Setup()
-       { }
+       {
+            _interactor = new InteractorLogin();
+        }
 
 
         [TestCase("","",AuthResponse.InvelidData,TestName = "Set data login Result:InvelidData 0")]

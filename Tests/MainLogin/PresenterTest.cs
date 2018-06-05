@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using Portable.MainViper.Interface;
+using Portable.MainViper.Presenter;
 
 namespace Tests.MainLogin
 {
@@ -13,7 +14,7 @@ namespace Tests.MainLogin
         [SetUp]
         public void Setup()
         {
-           
+            _presenter = new PresenterLogin();
         }
 
     }
