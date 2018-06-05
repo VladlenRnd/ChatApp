@@ -82,10 +82,7 @@ namespace Chat.Android
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int LoginElement = 2130903040;
-			
-			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int Main = 2130903040;
 			
 			static Layout()
 			{

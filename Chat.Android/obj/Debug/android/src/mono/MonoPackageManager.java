@@ -107,6 +107,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Chat.Android.dll" comes first in this list. */
 		"Chat.Android.dll",
+		"Portable.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -17,5 +17,24 @@ namespace Tests.MainLogin
             _presenter = new PresenterLogin();
         }
 
+        [Test]
+        public void RouterNotNull()
+        {
+            Assert.IsNotNull(_presenter.Router);
+        }
+
+
+        [Test]
+        public void GetLoginTest()
+        {
+            Assert.IsNotNull(_presenter.GetLogin());
+        }
+
+        [Test]
+        public void GetPassTest()
+        {
+            Assert.IsNotNull(_presenter.GetPass());
+        }
+
     }
 }
