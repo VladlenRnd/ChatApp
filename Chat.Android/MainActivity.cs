@@ -68,7 +68,7 @@ namespace Chat.Android
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            
+            /*
             var btn = FindViewById<ToggleButton>(Resource.Id.btnCahngeLng);
 
             btn.Click += ((s,e) => {
@@ -79,7 +79,7 @@ namespace Chat.Android
             });
 
             PresenterLogin _f = new PresenterLogin(this,new LangHelper("rus"));
-             
+             */
 
             // Get our button from the layout resource,
             // and attach an event to it

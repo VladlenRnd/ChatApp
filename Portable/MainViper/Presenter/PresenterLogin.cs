@@ -21,12 +21,12 @@ namespace Portable.MainViper.Presenter
         public PresenterLogin(ILoginView view,ILangHelper helper)
         {
            // throw new NotImplementedException();
-            _view = view;
-            _view.ChangeLangAct += _view_ChangeLangAct;
-            _locales = helper;
+           // _view = view;
+           // _view.ChangeLangAct += _view_ChangeLangAct;
+          //  _locales = helper;
         }
 
-        
+        /*
         private void _view_ChangeLangAct(bool lng)
         {
             string ln;
@@ -49,7 +49,7 @@ namespace Portable.MainViper.Presenter
                 _view.SetLocalLblLanguage(_locales.GetLngLanguageTxt(ln));
             }
         }
-
+        */
         public void GoToChat(int id)
         {
             throw new NotImplementedException();
