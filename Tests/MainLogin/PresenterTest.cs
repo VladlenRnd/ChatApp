@@ -23,18 +23,5 @@ namespace Tests.MainLogin
             Assert.IsNotNull(_presenter.Router);
         }
 
-
-        [Test]
-        public void GetLoginTest()
-        {
-            Assert.IsNotNull(_presenter.GetLogin());
-        }
-
-        [Test]
-        public void GetPassTest()
-        {
-            Assert.IsNotNull(_presenter.GetPass());
-        }
-
     }
 }
