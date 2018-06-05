@@ -7,9 +7,6 @@ namespace Portable.MainViper.Interface
 {
    public interface IInteractorLogin
     {
-        IPresenterLogin _presenter { get; }
-
-        AuthResponse SetLoginData(string login,string pass);
-
+        IPresenterLogin _presenter { set; }
     }
 }

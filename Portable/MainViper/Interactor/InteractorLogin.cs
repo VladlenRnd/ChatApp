@@ -8,9 +8,20 @@ namespace Portable.MainViper.Interactor
 {
     public class InteractorLogin : IInteractorLogin
     {
-        public IPresenterLogin _presenter => throw new NotImplementedException();
+        public IPresenterLogin _presenter { private get; set; }
 
-        public AuthResponse SetLoginData(string login, string pass)
+
+        private AuthResponse GetAccess(string login, string pass)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool ValidateLogin(string login)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool ValidatePassword(string pass)
         {
             throw new NotImplementedException();
         }

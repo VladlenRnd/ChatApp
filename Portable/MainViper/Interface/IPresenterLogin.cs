@@ -5,12 +5,16 @@ using System.Text;
 
 namespace Portable.MainViper.Interface
 {
-    public interface IPresenterLogin : IRouter
+    public interface IPresenterLogin
     {
         event Action<string,string> OnSingIn;
 
         event Action OnSingUp;
         IRouter Router { set; }
+
+        ILangHelper _locales { set; }
+
+        void GoToChat(int id);
 
     }
 }

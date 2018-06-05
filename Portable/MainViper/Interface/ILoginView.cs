@@ -7,14 +7,12 @@ namespace Portable.MainViper.Interface
 {
     public interface ILoginView
     {
-        event Action OnClickSingIn;
+        event Action<string,string> OnClickSingIn;
 
         event Action OnClickSingUp;
 
-        event Action<LanguageApp> ChangeLangAct;
+        event Action<bool> ChangeLangAct;
 
-        string GetLogin();
-        string GetPass();
 
         void SetLocalLogin(string text);
         void SetLocalPass(string text);

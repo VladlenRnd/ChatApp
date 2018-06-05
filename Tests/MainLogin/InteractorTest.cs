@@ -19,6 +19,7 @@ namespace Tests.MainLogin
         }
 
 
+        /*
         [TestCase("","",AuthResponse.InvelidData,TestName = "Set data login Result:InvelidData 0")]
         [TestCase("Admin", "", AuthResponse.InvelidData, TestName = "Set data login Result:InvelidData 1")]
         [TestCase("", "Admin", AuthResponse.InvelidData, TestName = "Set data login Result:InvelidData 2")]
@@ -31,14 +32,10 @@ namespace Tests.MainLogin
             var act = _interactor.SetLoginData(login, pass);
             Assert.AreEqual(response, act);      
         }
-
-        [Test]
-        public void SetPresenter()
-        {
-            Assert.NotNull(_interactor._presenter);
-        }
+        */
 
         
+
 
     }
 }
