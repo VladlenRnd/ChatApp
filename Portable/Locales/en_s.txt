@@ -1,0 +1,5 @@
+﻿LblLogin = Login
+LblPass = Password
+btnSignIn = Sign In
+btnSignOut = Sign Out
+lblLanguage = language

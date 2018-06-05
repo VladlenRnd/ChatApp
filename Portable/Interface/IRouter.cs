@@ -6,7 +6,7 @@ namespace Portable.Interface
 {
     public interface IRouter
     {
-        void GoToChat();
+        void GoToChat(int id);
         void GoBack();
     }
 }

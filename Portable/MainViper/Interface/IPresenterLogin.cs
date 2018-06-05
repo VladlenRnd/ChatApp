@@ -10,7 +10,7 @@ namespace Portable.MainViper.Interface
         event Action<string,string> OnSingIn;
 
         event Action OnSingUp;
-        IRouter Router { get; }
+        IRouter Router { set; }
 
     }
 }

@@ -1,0 +1,5 @@
+﻿LblLogin = Логин
+LblPass = Пароль
+btnSignIn = Вход
+btnSignOut = Регистрация
+lblLanguage = язык

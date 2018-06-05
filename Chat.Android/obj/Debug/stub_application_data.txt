@@ -1,0 +1,2 @@
+android.app.Application
+Chat.Android.Chat.Android

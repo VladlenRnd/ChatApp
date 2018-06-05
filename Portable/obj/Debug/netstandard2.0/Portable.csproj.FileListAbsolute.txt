@@ -1,0 +1,9 @@
+D:\Project\ChatApp\Portable\bin\Debug\netstandard2.0\Portable.deps.json
+D:\Project\ChatApp\Portable\bin\Debug\netstandard2.0\Portable.dll
+D:\Project\ChatApp\Portable\bin\Debug\netstandard2.0\Portable.pdb
+D:\Project\ChatApp\Portable\obj\Debug\netstandard2.0\Portable.csproj.CoreCompileInputs.cache
+D:\Project\ChatApp\Portable\obj\Debug\netstandard2.0\Portable.AssemblyInfoInputs.cache
+D:\Project\ChatApp\Portable\obj\Debug\netstandard2.0\Portable.AssemblyInfo.cs
+D:\Project\ChatApp\Portable\obj\Debug\netstandard2.0\Portable.dll
+D:\Project\ChatApp\Portable\obj\Debug\netstandard2.0\Portable.pdb
+D:\Project\ChatApp\Portable\obj\Debug\netstandard2.0\Portable.csprojResolveAssemblyReference.cache

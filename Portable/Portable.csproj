@@ -4,4 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Locales\en_s.txt" />
+    <None Remove="Locales\rus.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Locales\rus.txt" />
+    <EmbeddedResource Include="Locales\en_s.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="I18NPortable" Version="0.6.0" />
+  </ItemGroup>
+
 </Project>
