@@ -80,5 +80,4 @@ D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Web.Services.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Xml.pdb
 D:\Project\ChatApp\Chat.Android\bin\Debug\Chat.Android.dll
-D:\Project\ChatApp\Chat.Android\obj\Debug\linksrc\Portable.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\linksrc\Chat.Android.dll.mdb
