@@ -20,5 +20,6 @@ namespace Portable.MainViper.Interface
         void SetLocalPass(string text);
         void SetLocalInBtn(string text);
         void SetLocalUpBtn(string text);
+        void SetLocalLblLanguage(string text);
     }
 }

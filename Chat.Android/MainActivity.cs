@@ -29,6 +29,11 @@ namespace Chat.Android
             throw new NotImplementedException();
         }
 
+        public void SetLocalLblLanguage(string text)
+        {
+            throw new NotImplementedException();
+        }
+
         public void SetLocalLogin(string text)
         {
             throw new NotImplementedException();
