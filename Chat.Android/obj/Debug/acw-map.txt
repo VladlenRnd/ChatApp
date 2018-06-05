@@ -1,4 +1,0 @@
-Chat.Android.MainActivity, Chat.Android;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
-Chat.Android.MainActivity, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
-Chat.Android.MainActivity;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
-chat.android.MainActivity;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
