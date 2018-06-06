@@ -88,6 +88,7 @@ namespace Tests
         [TestCase(" ", TestName = "Get Lng Pass Txt : Exeption 2")]
         [TestCase(null, TestName = "Get Lng Pass Txt : Exeption 3")]
         [TestCase("___", TestName = "Get Lng Pass Txt : Exeption 4")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Exeption 5")]
         public void GetLngPassTxtExeptionTest(string lang)
         {
             Assert.Throws<ArgumentException>(() =>
@@ -100,6 +101,7 @@ namespace Tests
         [TestCase(" ", TestName = "Get Lng Btn In Txt : Exeption 2")]
         [TestCase(null, TestName = "Get Lng Btn In Txt : Exeption 3")]
         [TestCase("___", TestName = "Get Lng Btn In Txt : Exeption 4")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Exeption 5")]
         public void GetLngBtnInTxtExeptionTest(string lang)
         {
             Assert.Throws<ArgumentException>(() =>
@@ -113,6 +115,7 @@ namespace Tests
         [TestCase(" ", TestName = "Get Lng Btn Up Txt : Exeption 2")]
         [TestCase(null, TestName = "Get Lng Btn Up Txt : Exeption 3")]
         [TestCase("___", TestName = "Get Lng Btn Up Txt : Exeption 4")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Exeption 5")]
         public void GetLngBtnUpTxtExeptionTest(string lang)
         {
             Assert.Throws<ArgumentException>(() =>
@@ -126,6 +129,7 @@ namespace Tests
         [TestCase(" ", TestName = "Get Lng Language Txt : Exeption 2")]
         [TestCase(null, TestName = "Get Lng Language Txt : Exeption 3")]
         [TestCase("___", TestName = "Get Lng Language Txt : Exeption 4")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Exeption 5")]
         public void GetLngLanguageTxtExeptionTest(string lang)
         {
             Assert.Throws<ArgumentException>(() =>
@@ -139,6 +143,7 @@ namespace Tests
         [TestCase(" ", TestName = "Get Lng Login Txt : Exeption 2")]
         [TestCase(null, TestName = "Get Lng Login Txt : Exeption 3")]
         [TestCase("___", TestName = "Get Lng Login Txt : Exeption 4")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Exeption 5")]
         public void GetLngLoginTxtExeptionTest(string lang)
         {
             Assert.Throws<ArgumentException>(() =>

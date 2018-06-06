@@ -15,7 +15,5 @@ namespace Portable.MainViper.Interactor
         {
             throw new NotImplementedException();
         }
-
-     
     }
 }

@@ -9,6 +9,9 @@ namespace Portable.Enum
         OK = 1,
         EmptyField,
         UnresolvedСharacters,
-        Overflow,
+        NoNumbers,
+        NoLetter,
+        OverflowMin,
+        OverflowMax,
     }
 }
