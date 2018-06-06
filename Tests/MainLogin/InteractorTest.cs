@@ -4,6 +4,8 @@ using NUnit.Framework;
 using Portable.Enum;
 using Portable.MainViper.Interactor;
 using Portable.MainViper.Interface;
+using Moq;
+using Portable.Interface;
 
 namespace Tests.MainLogin
 {
@@ -11,13 +13,15 @@ namespace Tests.MainLogin
     public class InteractorTest
     {
 
-        IInteractorLogin _interactor;
+        private IInteractorLogin _interactor;
+        private Mock<IValidater> _validaterMock;
 
         [SetUp]
        public void Setup()
        {
-            _interactor = new InteractorLogin();
-        }
+            _validaterMock = new Mock<IValidater>(MockBehavior.Strict);
+            _interactor = new InteractorLogin(_validaterMock.Object);
+       }
 
 
         
