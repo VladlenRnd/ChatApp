@@ -22,33 +22,20 @@ namespace Tests.MainLogin
        {
             _validaterMock = new Mock<IValidater>(MockBehavior.Strict);
             _presenterMock = new Mock<IPresenterLogin>(MockBehavior.Strict);
-            _interactor = new InteractorLogin(_validaterMock.Object);
-            _interactor.Presenter = _presenterMock.Object;
+            _interactor = new InteractorLogin(_validaterMock.Object, _presenterMock.Object);
        }
 
 
         
 
-        [TestCase("Admin", "Admin12345", AuthResponse.Success, TestName = "GetAccess Result:Success")]
-        [TestCase("aaaa", "Admin12345", AuthResponse.AccessError, TestName = "GetAccess Result:AccessError 1")]
+        [TestCase("admin", "admin12345", AuthResponse.Success, TestName = "GetAccess Result:Success")]
+        [TestCase("aaaa", "admin12345", AuthResponse.AccessError, TestName = "GetAccess Result:AccessError 1")]
         public void GetAccessTest(string login,string pass, AuthResponse response)
         {
             MethodInfo methodInfo = typeof(InteractorLogin).GetMethod("GetAccess", BindingFlags.NonPublic | BindingFlags.Instance);
             var act = methodInfo.Invoke(_interactor,new object[] { login, pass });
             Assert.AreEqual(response, act);      
         }
-
-        [Test]
-        public void ValidateTestEvent()
-        {
-            _presenterMock.Raise(a => a.OnSingIn += null, It.IsAny<string>(), It.IsAny<string>());
-            _presenterMock.Verify(f => f.GoToChat(It.IsAny<string>()), Times.Once);
-        }
-
-
-        
-
-
 
     }
 }

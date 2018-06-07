@@ -9,13 +9,14 @@ namespace Portable.MainViper.Interactor
 {
     public class InteractorLogin : IInteractorLogin
     {
-        public IPresenterLogin Presenter { private get; set; }
+        public IPresenterLogin Presenter { private set;  get; }
 
         private IValidater _validater;
 
-        public InteractorLogin(IValidater valid)
+        public InteractorLogin(IValidater valid, IPresenterLogin presenter)
         {
             _validater = valid;
+            Presenter = presenter;
             Presenter.OnSingIn += Presenter_OnSingIn;
         }
 

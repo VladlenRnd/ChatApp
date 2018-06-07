@@ -13,40 +13,66 @@ namespace Portable
       
         public string GetLngLoginTxt(string locale)
         {
-            SetLocale(locale);
-            return "LblLogin".Translate();
+            if (SetLocale(locale))
+            {
+                return "LblLogin".Translate();
+            }
+            return null;
         }
 
         public string GetLngPassTxt(string locale)
         {
-            SetLocale(locale);
-            return "LblPass".Translate();
+            if (SetLocale(locale))
+            {
+                return "LblPass".Translate();
+            }
+            return null;
         }
 
         public string GetLngBtnInTxt(string locale)
         {
-            SetLocale(locale);
-            return "btnSignIn".Translate();
+            if (SetLocale(locale))
+            {
+                return "btnSignIn".Translate();
+            }
+            return null;
         }
 
         public string GetLngBtnUpTxt(string locale)
         {
-            SetLocale(locale);
-            return "btnSignOut".Translate();
+            if (SetLocale(locale))
+            {
+                return "btnSignOut".Translate();
+            }
+            return null;
         }
 
         public string GetLngLanguageTxt(string locale)
         {
-            SetLocale(locale);
-            return "lblLanguage".Translate();
+            if (SetLocale(locale))
+            {
+                return "lblLanguage".Translate();
+            }
+            return null;
         }
 
 
-        private void SetLocale(string locale)
+        private bool SetLocale(string locale)
         {
-            I18N.Current
-                   .SetFallbackLocale(locale)
-                   .Init(GetType().GetTypeInfo().Assembly);
+            bool res = false;
+
+            if (locale == null)
+                throw new ArgumentNullException("Локаль не может быть null");
+
+
+            if (locale == "rus" || locale == "en_s")
+            {
+                I18N.Current
+                       .SetFallbackLocale(locale)
+                       .Init(GetType().GetTypeInfo().Assembly);
+                res = true;
+            }
+            return res;
 
         }
 

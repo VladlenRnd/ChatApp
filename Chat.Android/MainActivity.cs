@@ -76,8 +76,7 @@ namespace Chat.Android
 
             _presenter = new PresenterLogin(this, _langHelper, _router);
 
-            _interactor = new InteractorLogin(_validater);
-            _interactor.Presenter = _presenter;
+            _interactor = new InteractorLogin(_validater, _presenter);
 
 
             var btnCahngeLanguage = FindViewById<ToggleButton>(Resource.Id.btnCahngeLng);

@@ -117,8 +117,8 @@ namespace Tests
 
         [TestCase("", TestName = "Get Lng Pass Txt : Null 1")]
         [TestCase(" ", TestName = "Get Lng Pass Txt : Null 2")]
-        [TestCase("___", TestName = "Get Lng Pass Txt : Null 4")]
-        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 5")]
+        [TestCase("___", TestName = "Get Lng Pass Txt : Null 3")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 4")]
         public void GetLngPassTxtNullTest(string lang)
         {
             Assert.Null(_lang.GetLngPassTxt(lang));
@@ -126,8 +126,8 @@ namespace Tests
 
         [TestCase("", TestName = "Get Lng Btn In Txt : Null 1")]
         [TestCase(" ", TestName = "Get Lng Btn In Txt : Null 2")]
-        [TestCase("___", TestName = "Get Lng Btn In Txt : Null 4")]
-        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 5")]
+        [TestCase("___", TestName = "Get Lng Btn In Txt : Null 3")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 4")]
         public void GetLngBtnInTxtNullTest(string lang)
         {
             Assert.Null(_lang.GetLngBtnInTxt(lang));
@@ -136,8 +136,8 @@ namespace Tests
 
         [TestCase("", TestName = "Get Lng Btn Up Txt : Null 1")]
         [TestCase(" ", TestName = "Get Lng Btn Up Txt : Null 2")]
-        [TestCase("___", TestName = "Get Lng Btn Up Txt : Null 4")]
-        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 5")]
+        [TestCase("___", TestName = "Get Lng Btn Up Txt : Null 3")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 4")]
         public void GetLngBtnUpTxtNullTest(string lang)
         {
                 Assert.Null(_lang.GetLngBtnUpTxt(lang));
@@ -146,8 +146,8 @@ namespace Tests
 
         [TestCase("", TestName = "Get Lng Language Txt : Null 1")]
         [TestCase(" ", TestName = "Get Lng Language Txt : Null 2")]
-        [TestCase("___", TestName = "Get Lng Language Txt : Null 4")]
-        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 5")]
+        [TestCase("___", TestName = "Get Lng Language Txt : Null 3")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 4")]
         public void GetLngLanguageTxtNullTest(string lang)
         {
                 Assert.Null(_lang.GetLngLanguageTxt(lang));
@@ -156,8 +156,8 @@ namespace Tests
 
         [TestCase("", TestName = "Get Lng Login Txt : Null 1")]
         [TestCase(" ", TestName = "Get Lng Login Txt : Null 2")]
-        [TestCase("___", TestName = "Get Lng Login Txt : Null 4")]
-        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 5")]
+        [TestCase("___", TestName = "Get Lng Login Txt : Null 3")]
+        [TestCase("aaa", TestName = "Get Lng Pass Txt : Null 4")]
         public void GetLngLoginTxtNullTest(string lang)
         {
                 Assert.Null(_lang.GetLngLoginTxt(lang));

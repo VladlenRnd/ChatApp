@@ -123,3 +123,6 @@ D:\Project\ChatApp\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
 D:\Project\ChatApp\Tests\obj\Debug\Tests.csproj.CopyComplete
 D:\Project\ChatApp\Tests\obj\Debug\Tests.dll
 D:\Project\ChatApp\Tests\obj\Debug\Tests.pdb
+D:\Project\ChatApp\Tests\bin\Debug\I18NPortable.dll
+D:\Project\ChatApp\Tests\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Project\ChatApp\Tests\bin\Debug\System.Diagnostics.DiagnosticSource.xml
