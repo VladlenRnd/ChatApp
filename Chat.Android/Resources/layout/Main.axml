@@ -63,4 +63,15 @@
         android:layout_toRightOf="@id/btnCahngeLng"
         android:id="@+id/txtLng"
         android:layout_alignTop="@id/btnCahngeLng" />
+    <TextView
+        android:text="Test"
+        android:layout_marginRight="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCahngeLng"
+        android:id="@+id/textError" />
 </RelativeLayout>

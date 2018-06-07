@@ -1,4 +1,5 @@
-﻿using Portable.Interface;
+﻿using Portable.Enum;
+using Portable.Interface;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,12 +10,11 @@ namespace Portable.MainViper.Interface
     {
         event Action<string,string> OnSingIn;
 
-        event Action OnSingUp;
-        IRouter Router { set; }
+        void ValidateError(CodeValidate codeError);
+        void AuthError(AuthResponse codeError);
 
-        ILangHelper _locales { set; }
 
-        void GoToChat(int id);
+        void GoToChat(string id);
 
     }
 }

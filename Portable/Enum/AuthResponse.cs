@@ -6,7 +6,7 @@ namespace Portable.Enum
 {
     public enum AuthResponse
     {
-        InvelidData,
+        None = -1,
         AccessError,
         Success
     }

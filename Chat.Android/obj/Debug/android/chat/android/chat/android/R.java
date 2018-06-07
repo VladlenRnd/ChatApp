@@ -16,6 +16,7 @@ public final class R {
         public static final int btnSignUp=0x7f050005;
         public static final int editLogin=0x7f050001;
         public static final int editPass=0x7f050003;
+        public static final int textError=0x7f050008;
         public static final int txtLng=0x7f050007;
         public static final int txtLogin=0x7f050000;
         public static final int txtPass=0x7f050002;

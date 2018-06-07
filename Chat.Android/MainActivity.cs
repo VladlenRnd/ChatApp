@@ -6,6 +6,9 @@ using Portable.Enum;
 using System;
 using Portable.MainViper.Presenter;
 using Portable;
+using Portable.Interface;
+using Chat.Android.Routers;
+using Portable.MainViper.Interactor;
 
 namespace Chat.Android
 {
@@ -16,47 +19,46 @@ namespace Chat.Android
         public event Action OnClickSingUp;
         public event Action<bool> ChangeLangAct;
 
-        public string GetLogin()
-        {
-            throw new NotImplementedException();
-        }
+        private IPresenterLogin _presenter;
+        private IInteractorLogin _interactor;
+        private IRouter _router;
+        private ILangHelper _langHelper;
+        private IValidater _validater;
 
-        public string GetPass()
-        {
-            throw new NotImplementedException();
-        }
 
         public void SetLocalInBtn(string text)
         {
-           // throw new NotImplementedException();
             var btn = FindViewById<Button>(Resource.Id.btnSignIn);
             btn.Text = text;
         }
 
+        public void SetError(string text)
+        {
+            var txtV = FindViewById<TextView>(Resource.Id.textError);
+            txtV.Text = text;
+        }
+
+
         public void SetLocalLblLanguage(string text)
         {
-           // throw new NotImplementedException();
             var txtV = FindViewById<TextView>(Resource.Id.txtLng);
             txtV.Text = text;
         }
 
         public void SetLocalLogin(string text)
         {
-           // throw new NotImplementedException();
             var txtV = FindViewById<TextView>(Resource.Id.txtLogin);
             txtV.Text = text;
         }
 
         public void SetLocalPass(string text)
         {
-           // throw new NotImplementedException();
             var txtV = FindViewById<TextView>(Resource.Id.txtPass);
             txtV.Text = text;
         }
 
         public void SetLocalUpBtn(string text)
         {
-           // throw new NotImplementedException();
             var btn = FindViewById<Button>(Resource.Id.btnSignUp);
             btn.Text = text;
         }
@@ -68,18 +70,36 @@ namespace Chat.Android
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            /*
-            var btn = FindViewById<ToggleButton>(Resource.Id.btnCahngeLng);
+            _langHelper = new LangHelper();
+            _validater = new Validater();
+            _router = new Router(ApplicationContext);
 
-            btn.Click += ((s,e) => {
+            _presenter = new PresenterLogin(this, _langHelper, _router);
 
-                var b = (ToggleButton)s;
-                ChangeLangAct?.Invoke(b.Checked);
+            _interactor = new InteractorLogin(_validater);
+            _interactor.Presenter = _presenter;
 
+
+            var btnCahngeLanguage = FindViewById<ToggleButton>(Resource.Id.btnCahngeLng);
+            var btnSingIn =  FindViewById<ToggleButton>(Resource.Id.btnSignIn);
+            var btnSingUp = FindViewById<ToggleButton>(Resource.Id.btnSignUp);
+
+            btnCahngeLanguage.Click += ((s,e) => {
+
+                var btn = (ToggleButton)s;
+                ChangeLangAct?.Invoke(btn.Checked);
             });
 
-            PresenterLogin _f = new PresenterLogin(this,new LangHelper("rus"));
-             */
+            btnSingIn.Click += ((s, e) => {
+                var LoginEdit = FindViewById<EditText>(Resource.Id.editLogin);
+                var PassEdit = FindViewById<EditText>(Resource.Id.editPass);
+                OnClickSingIn?.Invoke(LoginEdit.Text,PassEdit.Text);
+            });
+
+            btnSingUp.Click += ((s, e) =>
+            {
+                OnClickSingUp?.Invoke();
+            });
 
             // Get our button from the layout resource,
             // and attach an event to it

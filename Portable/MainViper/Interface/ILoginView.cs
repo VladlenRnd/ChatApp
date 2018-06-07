@@ -14,6 +14,9 @@ namespace Portable.MainViper.Interface
         event Action<bool> ChangeLangAct;
 
 
+        void SetError(string text);
+
+
         void SetLocalLogin(string text);
         void SetLocalPass(string text);
         void SetLocalInBtn(string text);

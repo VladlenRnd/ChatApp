@@ -3,6 +3,7 @@ using Portable.Interface;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Portable
 {
@@ -10,12 +11,56 @@ namespace Portable
     {
         public CodeValidate ValidateLogin(string login)
         {
-            throw new NotImplementedException();
+            login = login.Trim();
+
+            if (string.IsNullOrEmpty(login)) return CodeValidate.EmptyField;
+            if (login.Length > 50) return CodeValidate.OverflowMaxLogin;
+
+            var regex = @"^([\p{L}]{0,}[\p{L}0-9|`|'|−| |-]{0,}[\p{L}])$";
+
+            var match = Regex.Match(login, regex, RegexOptions.IgnoreCase|RegexOptions.CultureInvariant);
+
+            if (!match.Success)
+            {
+                return CodeValidate.UnresolvedСharacters;
+            }
+            else
+            {
+                return CodeValidate.OK;
+            }
+
+           
+
         }
 
         public CodeValidate ValidatePassword(string pass)
         {
-            throw new NotImplementedException();
+
+            if (string.IsNullOrEmpty(pass)) return CodeValidate.EmptyField;
+            if(pass.Length < 6) return CodeValidate.OverflowMinPass;
+            if (pass.Length > 50) return CodeValidate.OverflowMaxPass;
+
+            var regNumber = "\\D";
+            var regLater = "\\d";
+
+            if (Regex.Match(pass, regNumber, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant).Success)
+            {
+                if (Regex.Match(pass, regLater, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant).Success)
+                {
+                    return CodeValidate.OK;
+                }
+                else
+                {
+                    return CodeValidate.NoNumbers;
+                }
+            }
+            else
+            {
+                return CodeValidate.NoLetter;
+            }
+
+
+
         }
     }
 }

@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Genymotion Google Nexus 4 - 5.1.0 - API 22 - 768x1280</SelectedDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
   </PropertyGroup>
 </Project>

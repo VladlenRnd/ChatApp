@@ -6,12 +6,15 @@ namespace Portable.Enum
 {
     public enum CodeValidate
     {
+        None = -1,
         OK = 1,
         EmptyField,
         UnresolvedСharacters,
         NoNumbers,
         NoLetter,
-        OverflowMin,
-        OverflowMax,
+        OverflowMaxLogin,
+        OverflowMinLogin,
+        OverflowMaxPass,
+        OverflowMinPass,
     }
 }

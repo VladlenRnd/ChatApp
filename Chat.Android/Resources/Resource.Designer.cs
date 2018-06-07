@@ -59,6 +59,9 @@ namespace Chat.Android
 			// aapt resource value: 0x7f050003
 			public const int editPass = 2131034115;
 			
+			// aapt resource value: 0x7f050008
+			public const int textError = 2131034120;
+			
 			// aapt resource value: 0x7f050007
 			public const int txtLng = 2131034119;
 			

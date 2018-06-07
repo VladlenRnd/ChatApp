@@ -1,4 +1,5 @@
-﻿using Portable.Interface;
+﻿using Portable.Enum;
+using Portable.Interface;
 using Portable.MainViper.Interface;
 using System;
 using System.Collections.Generic;
@@ -9,48 +10,73 @@ namespace Portable.MainViper.Presenter
 {
     public class PresenterLogin : IPresenterLogin
     {
-        public IRouter Router { private get; set; }
-        public ILangHelper _locales { private get; set; }
 
         public event Action<string,string> OnSingIn;
-        public event Action OnSingUp;
 
         private ILoginView _view;
+        private IRouter _router;
+        private ILangHelper _locales;
+        private string language;
 
 
-        public PresenterLogin(ILoginView view,ILangHelper helper)
+        public PresenterLogin(ILoginView view,ILangHelper helper, IRouter router)
         {
-            throw new NotImplementedException();
-           // _view = view;
-           // _view.ChangeLangAct += _view_ChangeLangAct;
-          //  _locales = helper;
+            _view = view;
+            _router = router;
+            _locales = helper;
+
+            _view.ChangeLangAct += _view_ChangeLangAct;
+            _view.OnClickSingIn += _view_OnClickSingIn;
+            _view.OnClickSingUp += _view_OnClickSingUp;
         }
 
-        /*
+        private void _view_OnClickSingUp()
+        {
+            _router.GoToReg();
+        }
+
+        private void _view_OnClickSingIn(string login, string pass)
+        {
+            OnSingIn?.Invoke(login, pass);
+        }
+
         private void _view_ChangeLangAct(bool lng)
         {
-            string ln;
+           
             if (lng)
             {
-                ln = "rus";
-                _view.SetLocalLogin(_locales.GetLngLoginTxt(ln));
-                _view.SetLocalPass(_locales.GetLngPassTxt(ln));
-                _view.SetLocalInBtn(_locales.GetLngBtnInTxt(ln));
-                _view.SetLocalUpBtn(_locales.GetLngBtnUpTxt(ln));
-                _view.SetLocalLblLanguage(_locales.GetLngLanguageTxt(ln));
+                 language = "rus";
+                _view.SetLocalLogin(_locales.GetLngLoginTxt(language));
+                _view.SetLocalPass(_locales.GetLngPassTxt(language));
+                _view.SetLocalInBtn(_locales.GetLngBtnInTxt(language));
+                _view.SetLocalUpBtn(_locales.GetLngBtnUpTxt(language));
+                _view.SetLocalLblLanguage(_locales.GetLngLanguageTxt(language));
             }
             else
             {
-                ln = "en_s";
-                _view.SetLocalLogin(_locales.GetLngLoginTxt(ln));
-                _view.SetLocalPass(_locales.GetLngPassTxt(ln));
-                _view.SetLocalInBtn(_locales.GetLngBtnInTxt(ln));
-                _view.SetLocalUpBtn(_locales.GetLngBtnUpTxt(ln));
-                _view.SetLocalLblLanguage(_locales.GetLngLanguageTxt(ln));
+                 language = "en_s";
+                _view.SetLocalLogin(_locales.GetLngLoginTxt(language));
+                _view.SetLocalPass(_locales.GetLngPassTxt(language));
+                _view.SetLocalInBtn(_locales.GetLngBtnInTxt(language));
+                _view.SetLocalUpBtn(_locales.GetLngBtnUpTxt(language));
+                _view.SetLocalLblLanguage(_locales.GetLngLanguageTxt(language));
             }
         }
-        */
-        public void GoToChat(int id)
+        
+
+
+
+        public void GoToChat(string id)
+        {
+            _router.GoToChat(id);
+        }
+
+        public void ValidateError(CodeValidate codeError)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AuthError(AuthResponse codeError)
         {
             throw new NotImplementedException();
         }
