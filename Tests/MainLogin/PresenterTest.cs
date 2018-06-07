@@ -22,13 +22,13 @@ namespace Tests.MainLogin
             _viewMock = new Mock<ILoginView>(MockBehavior.Strict);
             _routerMock = new Mock<IRouter>(MockBehavior.Strict);
             _helperMock = new Mock<ILangHelper>(MockBehavior.Strict);
-            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object);
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object,"rus");
         }
 
         [Test]
         public void TestNotNull()
         {
-            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object);
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object,"rus");
             Assert.NotNull(_presenter);
         }
 
@@ -37,7 +37,7 @@ namespace Tests.MainLogin
         public void GoToChatAny()
         {
             _routerMock.Setup(f => f.GoToChat(It.IsAny<string>()));
-            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object);
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object,"rus");
             _presenter.GoToChat(It.IsAny<string>());
             _routerMock.Verify(f => f.GoToChat(It.IsAny<string>()));
         }
@@ -53,7 +53,7 @@ namespace Tests.MainLogin
         public void GoToChatNotAnyTest(string id)
         {
             _routerMock.Setup(f => f.GoToChat(It.IsAny<string>()));
-            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object);
+            _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object,"rus");
             _presenter.GoToChat(id);
             _routerMock.Verify(f => f.GoToChat(id));
         }

@@ -19,11 +19,12 @@ namespace Portable.MainViper.Presenter
         private string language;
 
 
-        public PresenterLogin(ILoginView view,ILangHelper helper, IRouter router)
+        public PresenterLogin(ILoginView view,ILangHelper helper, IRouter router,string localeDefault)
         {
             _view = view;
             _router = router;
             _locales = helper;
+             language = localeDefault;
 
             _view.ChangeLangAct += _view_ChangeLangAct;
             _view.OnClickSingIn += _view_OnClickSingIn;
@@ -68,17 +69,19 @@ namespace Portable.MainViper.Presenter
 
         public void GoToChat(string id)
         {
+            _view.SetError("");
             _router.GoToChat(id);
         }
 
         public void ValidateError(CodeValidate codeError)
         {
-            throw new NotImplementedException();
+            _view.SetError(_locales.GetLngErrorValidateText(language, codeError));
+
         }
 
         public void AuthError(AuthResponse codeError)
         {
-            throw new NotImplementedException();
+            _view.SetError(_locales.GetLngErrorAuthText(language, codeError));
         }
     }
     

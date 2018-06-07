@@ -24,12 +24,17 @@ namespace Chat.Android.Routers
 
         public void GoToChat(string id)
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(_context, typeof(ChatActivity));
+            intent.PutExtra("PersonId", id);
+            intent.AddFlags(ActivityFlags.NewTask);
+            _context.StartActivity(intent);
         }
 
         public void GoToReg()
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(_context, typeof(RegistrationActivity));
+            intent.AddFlags(ActivityFlags.NewTask);
+            _context.StartActivity(intent);
         }
     }
 }

@@ -1,4 +1,12 @@
+Chat.Android.ChatActivity, Chat.Android;md5055ebd4f3c37e678bdfa0d4b645159de.ChatActivity
+Chat.Android.ChatActivity, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5055ebd4f3c37e678bdfa0d4b645159de.ChatActivity
+Chat.Android.ChatActivity;md5055ebd4f3c37e678bdfa0d4b645159de.ChatActivity
+chat.android.ChatActivity;md5055ebd4f3c37e678bdfa0d4b645159de.ChatActivity
 Chat.Android.MainActivity, Chat.Android;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
 Chat.Android.MainActivity, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
 Chat.Android.MainActivity;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
 chat.android.MainActivity;md5055ebd4f3c37e678bdfa0d4b645159de.MainActivity
+Chat.Android.RegistrationActivity, Chat.Android;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity
+Chat.Android.RegistrationActivity, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity
+Chat.Android.RegistrationActivity;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity
+chat.android.RegistrationActivity;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity

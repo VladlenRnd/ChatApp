@@ -74,14 +74,14 @@ namespace Chat.Android
             _validater = new Validater();
             _router = new Router(ApplicationContext);
 
-            _presenter = new PresenterLogin(this, _langHelper, _router);
+            _presenter = new PresenterLogin(this, _langHelper, _router, "en_s");
 
             _interactor = new InteractorLogin(_validater, _presenter);
 
 
             var btnCahngeLanguage = FindViewById<ToggleButton>(Resource.Id.btnCahngeLng);
-            var btnSingIn =  FindViewById<ToggleButton>(Resource.Id.btnSignIn);
-            var btnSingUp = FindViewById<ToggleButton>(Resource.Id.btnSignUp);
+            var btnSingIn =  FindViewById<Button>(Resource.Id.btnSignIn);
+            var btnSingUp = FindViewById<Button>(Resource.Id.btnSignUp);
 
             btnCahngeLanguage.Click += ((s,e) => {
 

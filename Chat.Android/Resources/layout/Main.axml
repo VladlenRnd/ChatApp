@@ -64,7 +64,6 @@
         android:id="@+id/txtLng"
         android:layout_alignTop="@id/btnCahngeLng" />
     <TextView
-        android:text="Test"
         android:layout_marginRight="30dp"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_light"

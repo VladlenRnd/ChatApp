@@ -47,6 +47,8 @@ namespace Portable.MainViper.Interactor
                 case CodeValidate.EmptyField: Presenter.ValidateError(validateCodePass); break;
                 case CodeValidate.OverflowMaxPass: Presenter.ValidateError(validateCodePass); break;
                 case CodeValidate.OverflowMinPass: Presenter.ValidateError(validateCodePass); break;
+                case CodeValidate.NoLetter: Presenter.ValidateError(validateCodePass); break;
+                case CodeValidate.NoNumbers: Presenter.ValidateError(validateCodePass); break;
                 case CodeValidate.UnresolvedСharacters: Presenter.ValidateError(validateCodePass); break;
                 case CodeValidate.None: break;
                 default: break;
