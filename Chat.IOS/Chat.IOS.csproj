@@ -59,13 +59,23 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ChatController.cs" />
+    <Compile Include="ChatController.designer.cs">
+      <DependentUpon>ChatController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RegistrationController.cs" />
+    <Compile Include="RegistrationController.designer.cs">
+      <DependentUpon>RegistrationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Routers\Router.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
@@ -74,13 +84,24 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="I18NPortable, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\I18NPortable.0.6.0\lib\netstandard1.1\I18NPortable.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Portable\Portable.csproj">
+      <Project>{3dabcc3c-badc-49b2-94ea-07bb59405ab3}</Project>
+      <Name>Portable</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
