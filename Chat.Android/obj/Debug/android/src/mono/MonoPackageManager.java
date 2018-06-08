@@ -107,8 +107,14 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Chat.Android.dll" comes first in this list. */
 		"Chat.Android.dll",
+		"blocke.circleimageview.dll",
 		"I18NPortable.dll",
+		"Newtonsoft.Json.dll",
 		"Portable.dll",
+		"Xamarin.Android.Support.Annotations.dll",
+		"Xamarin.Android.Support.Compat.dll",
+		"Xamarin.Android.Support.Core.UI.dll",
+		"Xamarin.Android.Support.v7.RecyclerView.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -1,8 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <Jars />
-  <ResolvedResourceDirectories />
-  <ResolvedAssetDirectories />
+  <Jars>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\4\jl\support-annotations.jar</Jar>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\5\jl\classes.jar</Jar>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\6\jl\classes.jar</Jar>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\7\jl\classes.jar</Jar>
+  </Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\0\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\7\jl\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\lp\0\jl\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
-  <ResolvedResourceDirectoryStamps />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\0.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\7.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
 </Paths>

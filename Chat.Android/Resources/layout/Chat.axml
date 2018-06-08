@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <TextView
-        android:text="Добро пожаловать в Чат"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    android:orientation="vertical"
+    android:weightSum="5">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:weightSum="5">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnFind"
+            android:text="Найти" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/editFind"
+            android:hint="Поиск..."
+            android:text="" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/collectionView"
+        android:scrollbars="vertical"
+        android:layout_weight="5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
 </LinearLayout>

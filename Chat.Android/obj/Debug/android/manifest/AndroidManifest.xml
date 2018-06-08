@@ -22,4 +22,5 @@
       </intent-filter>
     </receiver>
   </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
 </manifest>

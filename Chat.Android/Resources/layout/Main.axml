@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@id/txtLogin"
         android:layout_below="@id/txtLogin"
-        android:id="@+id/editLogin" />
+        android:id="@+id/editLogin"
+        android:text="admin" />
     <TextView
         android:text="Password"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -32,7 +33,8 @@
         android:layout_alignStart="@id/txtPass"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPass"
-        android:id="@+id/editPass" />
+        android:id="@+id/editPass"
+        android:text="admin12345" />
     <Button
         android:text="Sign In"
         android:layout_width="200dp"
