@@ -111,6 +111,7 @@ class MonoPackageManager_Resources {
 		"I18NPortable.dll",
 		"Newtonsoft.Json.dll",
 		"Portable.dll",
+		"Xamarin.Android.AVLoadingIndicatorViewBinding.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.Core.UI.dll",

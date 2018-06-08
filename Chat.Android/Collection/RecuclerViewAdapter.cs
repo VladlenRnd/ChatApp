@@ -29,6 +29,12 @@ namespace Chat.Android.Collection
         }
 
 
+        public void UpdateList(NewsList data)
+        {
+            _news = data;
+            NotifyDataSetChanged();
+        }
+
 
         public override int ItemCount => _news.GetCountNews();
 
@@ -56,23 +62,20 @@ namespace Chat.Android.Collection
             View itemView = null;
             RecyclerView.ViewHolder vh;
 
-
-            switch (viewType)
-            {
-
-                case 0:
-                    itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCard, parent, false);
-                    vh = new ViewHolder(itemView, _mainView, _news, parent.Context);
-                    break;
-                case 1:
-                    itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCardRevers, parent, false);
-                    vh = new ViewHolder(itemView, _mainView, _news, parent.Context);
-                    break;
-                default:
-                    throw new ArgumentException("viewType wrong");
-            }
-
-
+                switch (viewType)
+                {
+                    case 0:
+                        itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCard, parent, false);
+                        vh = new ViewHolder(itemView, _mainView, _news, parent.Context);
+                        break;
+                    case 1:
+                        itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCardRevers, parent, false);
+                        vh = new ViewHolder(itemView, _mainView, _news, parent.Context);
+                        break;
+                    default:
+                        throw new ArgumentException("viewType wrong");
+                }
+            
             return vh;
         }
     }

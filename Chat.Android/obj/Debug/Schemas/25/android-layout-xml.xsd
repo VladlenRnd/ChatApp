@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>08.06.2018 18:49:17</xs:documentation>
+    <xs:documentation>08.06.2018 21:05:44</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,6 +82,7 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="com.wang.avi.AVLoadingIndicatorView" />
       <xs:element ref="android.support.v7.widget.RecyclerView" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
@@ -93,6 +94,7 @@
       <xs:element ref="android.support.v4.view.PagerTitleStrip" />
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
       <xs:element ref="blocke.circleimageview.CircleImageView" />
+      <xs:element ref="Chat.Android.CustomCard.LoadSpiner" />
       <xs:element ref="Chat.Android.CustomCard.NewsCard" />
       <xs:element ref="include" />
     </xs:choice>
@@ -307,6 +309,15 @@
     <xs:attribute ref="tools:visibility" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
+    <xs:attribute ref="android:layout_margin" />
+    <xs:attribute ref="android:layout_marginLeft" />
+    <xs:attribute ref="android:layout_marginTop" />
+    <xs:attribute ref="android:layout_marginRight" />
+    <xs:attribute ref="android:layout_marginBottom" />
+    <xs:attribute ref="android:layout_marginStart" />
+    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="MultiAutoCompleteTextView" type="MultiAutoCompleteTextView">
@@ -1393,7 +1404,33 @@
     <xs:attribute ref="tools:layout" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
+    <xs:attribute ref="android:layout_margin" />
+    <xs:attribute ref="android:layout_marginLeft" />
+    <xs:attribute ref="android:layout_marginTop" />
+    <xs:attribute ref="android:layout_marginRight" />
+    <xs:attribute ref="android:layout_marginBottom" />
+    <xs:attribute ref="android:layout_marginStart" />
+    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="com.wang.avi.AVLoadingIndicatorView" type="com.wang.avi.AVLoadingIndicatorView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Wang.Avi.AVLoadingIndicatorView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.wang.avi.AVLoadingIndicatorView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View">
+        <xs:attribute ref="app:minWidth" />
+        <xs:attribute ref="app:maxWidth" />
+        <xs:attribute ref="app:minHeight" />
+        <xs:attribute ref="app:maxHeight" />
+        <xs:attribute ref="app:indicatorName" />
+        <xs:attribute ref="app:indicatorColor" />
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
     <xs:annotation>
@@ -1623,6 +1660,28 @@
         <xs:attribute ref="app:civ_border_color" />
         <xs:attribute ref="app:civ_border_overlay" />
         <xs:attribute ref="app:civ_fill_color" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Chat.Android.CustomCard.LoadSpiner" type="Chat.Android.CustomCard.LoadSpiner">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Chat.Android.CustomCard.LoadSpiner</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Chat.Android.CustomCard.LoadSpiner">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout">
+        <xs:attribute ref="android:paddingHorizontal" />
+        <xs:attribute ref="android:paddingVertical" />
+        <xs:attribute ref="android:autofillMode" />
+        <xs:attribute ref="android:autofillHints" />
+        <xs:attribute ref="android:importantForAutofill" />
+        <xs:attribute ref="android:tooltipText" />
+        <xs:attribute ref="android:keyboardNavigationCluster" />
+        <xs:attribute ref="android:__removed0" />
+        <xs:attribute ref="android:nextClusterForward" />
+        <xs:attribute ref="android:__removed1" />
+        <xs:attribute ref="android:focusedByDefault" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>

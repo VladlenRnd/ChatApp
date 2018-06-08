@@ -9,6 +9,8 @@ namespace Portable.NewsViper.Interface
     {
         event Action<string> ClickFindBtn;
 
+        void LoadSpiner();
+
         void UpdateData(News list);
     }
 }

@@ -40,20 +40,38 @@ namespace Chat.Android
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010005
-			public const int civ_border_color = 2130771973;
+			// aapt resource value: 0x7f01000b
+			public const int civ_border_color = 2130771979;
 			
-			// aapt resource value: 0x7f010006
-			public const int civ_border_overlay = 2130771974;
+			// aapt resource value: 0x7f01000c
+			public const int civ_border_overlay = 2130771980;
 			
-			// aapt resource value: 0x7f010004
-			public const int civ_border_width = 2130771972;
+			// aapt resource value: 0x7f01000a
+			public const int civ_border_width = 2130771978;
 			
-			// aapt resource value: 0x7f010007
-			public const int civ_fill_color = 2130771975;
+			// aapt resource value: 0x7f01000d
+			public const int civ_fill_color = 2130771981;
+			
+			// aapt resource value: 0x7f010009
+			public const int indicatorColor = 2130771977;
+			
+			// aapt resource value: 0x7f010008
+			public const int indicatorName = 2130771976;
 			
 			// aapt resource value: 0x7f010000
 			public const int layoutManager = 2130771968;
+			
+			// aapt resource value: 0x7f010007
+			public const int maxHeight = 2130771975;
+			
+			// aapt resource value: 0x7f010005
+			public const int maxWidth = 2130771973;
+			
+			// aapt resource value: 0x7f010006
+			public const int minHeight = 2130771974;
+			
+			// aapt resource value: 0x7f010004
+			public const int minWidth = 2130771972;
 			
 			// aapt resource value: 0x7f010002
 			public const int reverseLayout = 2130771970;
@@ -99,11 +117,14 @@ namespace Chat.Android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050001
+			public const int avi = 2131034113;
+			
 			// aapt resource value: 0x7f05000b
 			public const int btnCahngeLng = 2131034123;
 			
-			// aapt resource value: 0x7f050001
-			public const int btnFind = 2131034113;
+			// aapt resource value: 0x7f050002
+			public const int btnFind = 2131034114;
 			
 			// aapt resource value: 0x7f050009
 			public const int btnSignIn = 2131034121;
@@ -111,11 +132,11 @@ namespace Chat.Android
 			// aapt resource value: 0x7f05000a
 			public const int btnSignUp = 2131034122;
 			
-			// aapt resource value: 0x7f050003
-			public const int collectionView = 2131034115;
+			// aapt resource value: 0x7f050004
+			public const int collectionView = 2131034116;
 			
-			// aapt resource value: 0x7f050002
-			public const int editFind = 2131034114;
+			// aapt resource value: 0x7f050003
+			public const int editFind = 2131034115;
 			
 			// aapt resource value: 0x7f050006
 			public const int editLogin = 2131034118;
@@ -128,9 +149,6 @@ namespace Chat.Android
 			
 			// aapt resource value: 0x7f050000
 			public const int item_touch_helper_previous_elevation = 2131034112;
-			
-			// aapt resource value: 0x7f050004
-			public const int progressBar1 = 2131034116;
 			
 			// aapt resource value: 0x7f05000f
 			public const int textCard = 2131034127;
@@ -167,19 +185,16 @@ namespace Chat.Android
 			public const int Chat = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int LoadSpiner = 2130903041;
+			public const int Main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int NewsCard = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int NewsCard = 2130903043;
+			public const int NewsCardRevers = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int NewsCardRevers = 2130903044;
-			
-			// aapt resource value: 0x7f030005
-			public const int Registration = 2130903045;
+			public const int Registration = 2130903044;
 			
 			static Layout()
 			{
@@ -210,11 +225,11 @@ namespace Chat.Android
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int app_name = 2131099649;
-			
 			// aapt resource value: 0x7f060000
-			public const int hello = 2131099648;
+			public const int app_name = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int hello = 2131099649;
 			
 			static String()
 			{
@@ -226,14 +241,62 @@ namespace Chat.Android
 			}
 		}
 		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int AVLoadingIndicatorView = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int AVLoadingIndicatorView_Large = 2131165185;
+			
+			// aapt resource value: 0x7f070002
+			public const int AVLoadingIndicatorView_Small = 2131165186;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
+			{
+			}
+		}
+		
 		public partial class Styleable
 		{
 			
-			public static int[] CircleImageView = new int[] {
+			public static int[] AVLoadingIndicatorView = new int[] {
 					2130771972,
 					2130771973,
 					2130771974,
-					2130771975};
+					2130771975,
+					2130771976,
+					2130771977};
+			
+			// aapt resource value: 5
+			public const int AVLoadingIndicatorView_indicatorColor = 5;
+			
+			// aapt resource value: 4
+			public const int AVLoadingIndicatorView_indicatorName = 4;
+			
+			// aapt resource value: 3
+			public const int AVLoadingIndicatorView_maxHeight = 3;
+			
+			// aapt resource value: 1
+			public const int AVLoadingIndicatorView_maxWidth = 1;
+			
+			// aapt resource value: 2
+			public const int AVLoadingIndicatorView_minHeight = 2;
+			
+			// aapt resource value: 0
+			public const int AVLoadingIndicatorView_minWidth = 0;
+			
+			public static int[] CircleImageView = new int[] {
+					2130771978,
+					2130771979,
+					2130771980,
+					2130771981};
 			
 			// aapt resource value: 1
 			public const int CircleImageView_civ_border_color = 1;

@@ -1,21 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\5\jl\support-annotations.jar</Jar>
-    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\6\jl\classes.jar</Jar>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\5\jl\bin\classes.jar</Jar>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\6\jl\support-annotations.jar</Jar>
     <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\7\jl\classes.jar</Jar>
     <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\8\jl\classes.jar</Jar>
+    <Jar>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\9\jl\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\0\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\8\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\5\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\9\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\lp\0\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\5\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
     <ResolvedResourceDirectoryStamp>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\0.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\8.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\5.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Project\ChatApp\Chat.Android\obj\Debug\lp\9.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

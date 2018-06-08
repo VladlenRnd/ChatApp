@@ -11,6 +11,7 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using Chat.Android.Collection;
+using Com.Wang.Avi;
 using Portable.Data;
 using Portable.NewsViper.Interface;
 using Portable.Repository;
@@ -25,13 +26,19 @@ namespace Chat.Android
         private RecyclerView.LayoutManager mLayoutManager;
         private RecuclerViewAdapter mUserCollection;
         private RepositoryData repo;
+        private AVLoadingIndicatorView avi;
 
         public event Action<string> ClickFindBtn;
 
+        public void LoadSpiner()
+        {
+            avi.Show();
+        }
+
         public void UpdateData(News list)
         {
-            mUserCollection = new RecuclerViewAdapter(this, new NewsList(list));
-            mRecyclerView.SetAdapter(mUserCollection);
+            mUserCollection.UpdateList(new NewsList(list));
+            avi.Hide();
         }
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -39,6 +46,10 @@ namespace Chat.Android
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Chat);
+
+             avi = FindViewById<AVLoadingIndicatorView>(Resource.Id.avi);
+
+
 
             repo = new RepositoryData(this);
 

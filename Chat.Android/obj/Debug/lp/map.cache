@@ -3,6 +3,7 @@ I18NPortable
 Newtonsoft.Json
 Portable
 System.Runtime
+Xamarin.Android.AVLoadingIndicatorViewBinding
 Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat
 Xamarin.Android.Support.Core.UI

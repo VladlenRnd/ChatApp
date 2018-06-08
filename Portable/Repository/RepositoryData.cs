@@ -26,7 +26,7 @@ namespace Portable.Repository
         {
             string res;
             string url = String.Format("https://newsapi.org/v2/top-headlines?sources=lenta&q={0}&apiKey=7917a33f77da46a5af1d4849b160e5ec", searc);
-
+            _view.LoadSpiner();
             res = await GetNewsByUrl(url);
 
             News m = JsonConvert.DeserializeObject<News>(res);

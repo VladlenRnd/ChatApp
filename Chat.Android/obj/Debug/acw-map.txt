@@ -10,6 +10,10 @@ Chat.Android.RegistrationActivity, Chat.Android;md5055ebd4f3c37e678bdfa0d4b64515
 Chat.Android.RegistrationActivity, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity
 Chat.Android.RegistrationActivity;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity
 chat.android.RegistrationActivity;md5055ebd4f3c37e678bdfa0d4b645159de.RegistrationActivity
+Chat.Android.CustomCard.LoadSpiner, Chat.Android;CustomCard.LoadSpinerView
+Chat.Android.CustomCard.LoadSpiner, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;CustomCard.LoadSpinerView
+Chat.Android.CustomCard.LoadSpiner;CustomCard.LoadSpinerView
+CustomCard.LoadSpinerView;CustomCard.LoadSpinerView
 Chat.Android.CustomCard.NewsCard, Chat.Android;CustomCard.CardViewControl
 Chat.Android.CustomCard.NewsCard, Chat.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;CustomCard.CardViewControl
 Chat.Android.CustomCard.NewsCard;CustomCard.CardViewControl

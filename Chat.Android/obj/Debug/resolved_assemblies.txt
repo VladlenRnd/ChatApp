@@ -12,6 +12,7 @@ D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.IO.Compression.d
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Net.Http.dll
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Runtime.dll
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Xml.dll
+D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\Xamarin.Android.AVLoadingIndicatorViewBinding.dll
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.UI.dll
