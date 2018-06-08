@@ -37,6 +37,7 @@ namespace Tests.MainLogin
         public void GoToChatAny()
         {
             _routerMock.Setup(f => f.GoToChat(It.IsAny<string>()));
+            _viewMock.Setup(f => f.SetError(""));
             _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object,"rus");
             _presenter.GoToChat(It.IsAny<string>());
             _routerMock.Verify(f => f.GoToChat(It.IsAny<string>()));
@@ -53,6 +54,7 @@ namespace Tests.MainLogin
         public void GoToChatNotAnyTest(string id)
         {
             _routerMock.Setup(f => f.GoToChat(It.IsAny<string>()));
+            _viewMock.Setup(f => f.SetError(""));
             _presenter = new PresenterLogin(_viewMock.Object, _helperMock.Object, _routerMock.Object,"rus");
             _presenter.GoToChat(id);
             _routerMock.Verify(f => f.GoToChat(id));

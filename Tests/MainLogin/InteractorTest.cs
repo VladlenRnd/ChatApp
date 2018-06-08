@@ -29,7 +29,7 @@ namespace Tests.MainLogin
         
 
         [TestCase("admin", "admin12345", AuthResponse.Success, TestName = "GetAccess Result:Success")]
-        [TestCase("aaaa", "admin12345", AuthResponse.AccessError, TestName = "GetAccess Result:AccessError 1")]
+        [TestCase("aaaa", "admin12345", AuthResponse.AccessError, TestName = "GetAccess Result:AccessError")]
         public void GetAccessTest(string login,string pass, AuthResponse response)
         {
             MethodInfo methodInfo = typeof(InteractorLogin).GetMethod("GetAccess", BindingFlags.NonPublic | BindingFlags.Instance);
