@@ -40,7 +40,7 @@
                                 <rect key="frame" x="65" y="144" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="262" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="120" y="211" width="173" height="30"/>
@@ -147,7 +147,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5484" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="88" y="30" width="306" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <accessibility key="accessibilityConfiguration" hint="Поиск..."/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5487" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="30" width="46" height="30"/>
+                                <state key="normal" title="Найти"/>
+                                <constraints>
+                                    <constraint id="5491" firstItem="5487" firstAttribute="width" constant="46"/>
+                                    <constraint id="5492" firstItem="5487" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5494" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="79" width="374" height="657"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5496">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5495">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="5485" firstItem="5484" firstAttribute="trailing" secondItem="2843" secondAttribute="trailingMargin"/>
+                            <constraint id="5486" firstItem="5484" firstAttribute="top" secondItem="2839" secondAttribute="bottom" constant="10"/>
+                            <constraint id="5488" firstItem="5487" firstAttribute="leading" secondItem="2843" secondAttribute="leadingMargin"/>
+                            <constraint id="5489" firstItem="5487" firstAttribute="top" secondItem="2839" secondAttribute="bottom" constant="10"/>
+                            <constraint id="5490" firstItem="5484" firstAttribute="leading" secondItem="5487" secondAttribute="trailing" constant="22"/>
+                            <constraint id="5499" firstItem="2843" firstAttribute="trailingMargin" secondItem="5494" secondAttribute="trailing"/>
+                            <constraint id="5500" firstItem="2840" firstAttribute="top" secondItem="5494" secondAttribute="bottom"/>
+                            <constraint id="5501" firstItem="5494" firstAttribute="top" secondItem="5484" secondAttribute="bottom" constant="19"/>
+                            <constraint id="5503" firstItem="5494" firstAttribute="leading" secondItem="2843" secondAttribute="leadingMargin"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_collectionView" destination="5494" id="name-outlet-5494"/>
+                        <outlet property="_findBtn" destination="5487" id="name-outlet-5487"/>
+                        <outlet property="_editFind" destination="5484" id="name-outlet-5484"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2844" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

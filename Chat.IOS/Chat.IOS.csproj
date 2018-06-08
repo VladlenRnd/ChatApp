@@ -63,8 +63,15 @@
     <Compile Include="ChatController.designer.cs">
       <DependentUpon>ChatController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Collection\NewsCell.cs" />
+    <Compile Include="Collection\NewsCell.designer.cs">
+      <DependentUpon>NewsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collection\NewsCellDelegate.cs" />
+    <Compile Include="Collection\NewsDataSource.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <InterfaceDefinition Include="Collection\NewsCell.xib" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +83,7 @@
       <DependentUpon>RegistrationController.cs</DependentUpon>
     </Compile>
     <Compile Include="Routers\Router.cs" />
+    <Compile Include="Routers\RouterNews.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
@@ -86,6 +94,9 @@
   <ItemGroup>
     <Reference Include="I18NPortable, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\I18NPortable.0.6.0\lib\netstandard1.1\I18NPortable.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.IO.Compression" />
