@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>08.06.2018 12:21:28</xs:documentation>
+    <xs:documentation>08.06.2018 18:49:17</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -13,8 +13,10 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/chat" />
+            <xs:enumeration value="@layout/loadspiner" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/newscard" />
+            <xs:enumeration value="@layout/newscard - копировать" />
             <xs:enumeration value="@layout/registration" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -54,8 +56,10 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/chat" />
+            <xs:enumeration value="@layout/loadspiner" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/newscard" />
+            <xs:enumeration value="@layout/newscard - копировать" />
             <xs:enumeration value="@layout/registration" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -95,8 +99,10 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/chat" />
+            <xs:enumeration value="@layout/loadspiner" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/newscard" />
+            <xs:enumeration value="@layout/newscard - копировать" />
             <xs:enumeration value="@layout/registration" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -136,8 +142,10 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/chat" />
+            <xs:enumeration value="@layout/loadspiner" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/newscard" />
+            <xs:enumeration value="@layout/newscard - копировать" />
             <xs:enumeration value="@layout/registration" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />

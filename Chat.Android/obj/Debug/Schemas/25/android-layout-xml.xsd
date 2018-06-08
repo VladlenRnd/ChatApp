@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>08.06.2018 12:21:28</xs:documentation>
+    <xs:documentation>08.06.2018 18:49:17</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,7 +82,6 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
-      <xs:element ref="blocke.circleimageview.CircleImageView" />
       <xs:element ref="android.support.v7.widget.RecyclerView" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
@@ -93,6 +92,7 @@
       <xs:element ref="android.support.v4.view.ViewPager" />
       <xs:element ref="android.support.v4.view.PagerTitleStrip" />
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
+      <xs:element ref="blocke.circleimageview.CircleImageView" />
       <xs:element ref="Chat.Android.CustomCard.NewsCard" />
       <xs:element ref="include" />
     </xs:choice>
@@ -307,15 +307,6 @@
     <xs:attribute ref="tools:visibility" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_weight" />
-    <xs:attribute ref="android:layout_gravity" />
-    <xs:attribute ref="android:layout_margin" />
-    <xs:attribute ref="android:layout_marginLeft" />
-    <xs:attribute ref="android:layout_marginTop" />
-    <xs:attribute ref="android:layout_marginRight" />
-    <xs:attribute ref="android:layout_marginBottom" />
-    <xs:attribute ref="android:layout_marginStart" />
-    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="MultiAutoCompleteTextView" type="MultiAutoCompleteTextView">
@@ -1402,31 +1393,7 @@
     <xs:attribute ref="tools:layout" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_weight" />
-    <xs:attribute ref="android:layout_gravity" />
-    <xs:attribute ref="android:layout_margin" />
-    <xs:attribute ref="android:layout_marginLeft" />
-    <xs:attribute ref="android:layout_marginTop" />
-    <xs:attribute ref="android:layout_marginRight" />
-    <xs:attribute ref="android:layout_marginBottom" />
-    <xs:attribute ref="android:layout_marginStart" />
-    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
-  </xs:complexType>
-  <xs:element name="blocke.circleimageview.CircleImageView" type="blocke.circleimageview.CircleImageView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: blocke.circleimageview.CircleImageView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="blocke.circleimageview.CircleImageView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ImageView">
-        <xs:attribute ref="app:civ_border_width" />
-        <xs:attribute ref="app:civ_border_color" />
-        <xs:attribute ref="app:civ_border_overlay" />
-        <xs:attribute ref="app:civ_fill_color" />
-      </xs:extension>
-    </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
     <xs:annotation>
@@ -1641,6 +1608,21 @@
         <xs:attribute ref="android:nextClusterForward" />
         <xs:attribute ref="android:__removed1" />
         <xs:attribute ref="android:focusedByDefault" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="blocke.circleimageview.CircleImageView" type="blocke.circleimageview.CircleImageView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: blocke.circleimageview.CircleImageView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="blocke.circleimageview.CircleImageView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView">
+        <xs:attribute ref="app:civ_border_width" />
+        <xs:attribute ref="app:civ_border_color" />
+        <xs:attribute ref="app:civ_border_overlay" />
+        <xs:attribute ref="app:civ_fill_color" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>

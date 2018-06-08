@@ -81,8 +81,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChatActivity.cs" />
+    <Compile Include="Collection\LoadSpinerHolder.cs" />
     <Compile Include="Collection\RecuclerViewAdapter.cs" />
     <Compile Include="Collection\ViewHolder.cs" />
+    <Compile Include="CustomCard\LoadSpiner.cs" />
     <Compile Include="CustomCard\NewsCard.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RegistrationActivity.cs" />
@@ -107,6 +109,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\NewsCard.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LoadSpiner.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NewsCardRevers.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

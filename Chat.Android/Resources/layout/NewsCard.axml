@@ -2,16 +2,15 @@
 <CustomCard.CardViewControl xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/darker_gray"
     android:paddingBottom="4dp"
     android:paddingTop="4dp">
     <blocke.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imageCard"
-        android:layout_height="70dp"
-        android:layout_width="70dp" />
+        android:layout_height="45dp"
+        android:layout_width="45dp" />
     <TextView
         android:text="test"
-        android:textSize="23dp"
+        android:textSize="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"

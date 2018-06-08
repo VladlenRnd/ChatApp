@@ -32,6 +32,9 @@ D:\Project\ChatApp\Chat.Android\obj\Debug\res\mipmap-xxhdpi\icon.png
 D:\Project\ChatApp\Chat.Android\obj\Debug\res\mipmap-xxxhdpi\icon.png
 D:\Project\ChatApp\Chat.Android\obj\Debug\R.cs.flag
 D:\Project\ChatApp\Chat.Android\obj\Debug\uploadflags.txt
+D:\Project\ChatApp\Chat.Android\bin\Debug\Newtonsoft.Json.dll
+D:\Project\ChatApp\Chat.Android\bin\Debug\Newtonsoft.Json.xml
+D:\Project\ChatApp\Chat.Android\obj\Debug\res\layout\loadspiner.xml
 D:\Project\ChatApp\Chat.Android\bin\Debug\Mono.Android.pdb
 D:\Project\ChatApp\Chat.Android\bin\Debug\mscorlib.pdb
 D:\Project\ChatApp\Chat.Android\bin\Debug\System.Core.pdb
@@ -91,8 +94,6 @@ D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Transactions.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Web.Services.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\android\assets\System.Xml.pdb
-D:\Project\ChatApp\Chat.Android\bin\Debug\Newtonsoft.Json.dll
-D:\Project\ChatApp\Chat.Android\bin\Debug\Newtonsoft.Json.xml
+D:\Project\ChatApp\Chat.Android\obj\Debug\res\layout\newscardrevers.xml
 D:\Project\ChatApp\Chat.Android\bin\Debug\Chat.Android.dll
-D:\Project\ChatApp\Chat.Android\obj\Debug\linksrc\Portable.pdb
 D:\Project\ChatApp\Chat.Android\obj\Debug\linksrc\Chat.Android.dll.mdb

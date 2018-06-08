@@ -19,18 +19,18 @@ namespace Chat.Android.Collection
     public class RecuclerViewAdapter : RecyclerView.Adapter
     {
 
-        private NewsList _user;
+        private NewsList _news;
         private IViewNews _mainView;
 
-        public RecuclerViewAdapter(IViewNews view)
+        public RecuclerViewAdapter(IViewNews view, NewsList data)
         {
-            _user = new NewsList();
+            _news = data;
             _mainView = view;
-
         }
 
 
-        public override int ItemCount => _user.GetCountNews() + 1;
+
+        public override int ItemCount => _news.GetCountNews();
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
@@ -40,15 +40,37 @@ namespace Chat.Android.Collection
             }
         }
 
+        public override int GetItemViewType(int position)
+        {
+            int res = -1;
+
+            if (position % 2 == 0)
+                res = 0;
+            else
+                res = 1;
+
+            return res;
+        }
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             View itemView = null;
             RecyclerView.ViewHolder vh;
 
 
-                    itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCard, parent, false);
-                    vh = new ViewHolder(itemView, _mainView, parent.Context);
+            switch (viewType)
+            {
 
+                case 0:
+                    itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCard, parent, false);
+                    vh = new ViewHolder(itemView, _mainView, _news, parent.Context);
+                    break;
+                case 1:
+                    itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NewsCardRevers, parent, false);
+                    vh = new ViewHolder(itemView, _mainView, _news, parent.Context);
+                    break;
+                default:
+                    throw new ArgumentException("viewType wrong");
+            }
 
 
             return vh;

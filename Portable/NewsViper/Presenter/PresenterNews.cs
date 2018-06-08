@@ -1,4 +1,5 @@
-﻿using Portable.NewsViper.Interface;
+﻿using Portable.Data;
+using Portable.NewsViper.Interface;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +8,6 @@ namespace Portable.NewsViper.Presenter
 {
     public class PresenterNews : IPresenterNews
     {
-        public event Action<string> ClickFindBtn;
 
         private IViewNewsCard _viewCard;
         private IViewNews _view;
@@ -18,19 +18,19 @@ namespace Portable.NewsViper.Presenter
             _viewCard = viewCard;
             _view = view;
             _router = router;
-            view.ClickFindBtn += View_ClickFindBtn;
         }
 
-        private void View_ClickFindBtn(string obj)
-        {
-            ClickFindBtn?.Invoke(obj);
-        }
 
         public void SetData(INewsEntity entity)
         {
             _viewCard.SetTitleNews(entity.Title);
             _viewCard.SetImageNews(entity.UrlImg);
             _viewCard.SetTimeNews(entity.Time);
+        }
+
+        public void UpdateData(News data)
+        {
+            _view.UpdateData(data);
         }
     }
 }

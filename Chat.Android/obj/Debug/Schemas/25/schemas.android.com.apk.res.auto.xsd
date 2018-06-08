@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>08.06.2018 12:21:28</xs:documentation>
+    <xs:documentation>08.06.2018 18:49:17</xs:documentation>
   </xs:annotation>
   <xs:attribute name="civ_border_color">
     <xs:annotation>

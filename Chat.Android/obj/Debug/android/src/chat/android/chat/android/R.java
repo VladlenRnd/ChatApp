@@ -84,28 +84,31 @@ containing a value of this type.
         public static final int item_touch_helper_swipe_escape_velocity=0x7f040002;
     }
     public static final class id {
-        public static final int btnCahngeLng=0x7f05000a;
+        public static final int btnCahngeLng=0x7f05000b;
         public static final int btnFind=0x7f050001;
-        public static final int btnSignIn=0x7f050008;
-        public static final int btnSignUp=0x7f050009;
+        public static final int btnSignIn=0x7f050009;
+        public static final int btnSignUp=0x7f05000a;
         public static final int collectionView=0x7f050003;
         public static final int editFind=0x7f050002;
-        public static final int editLogin=0x7f050005;
-        public static final int editPass=0x7f050007;
-        public static final int imageCard=0x7f05000d;
+        public static final int editLogin=0x7f050006;
+        public static final int editPass=0x7f050008;
+        public static final int imageCard=0x7f05000e;
         public static final int item_touch_helper_previous_elevation=0x7f050000;
-        public static final int textCard=0x7f05000e;
-        public static final int textError=0x7f05000c;
-        public static final int textView1=0x7f05000f;
-        public static final int txtLng=0x7f05000b;
-        public static final int txtLogin=0x7f050004;
-        public static final int txtPass=0x7f050006;
+        public static final int progressBar1=0x7f050004;
+        public static final int textCard=0x7f05000f;
+        public static final int textError=0x7f05000d;
+        public static final int textView1=0x7f050010;
+        public static final int txtLng=0x7f05000c;
+        public static final int txtLogin=0x7f050005;
+        public static final int txtPass=0x7f050007;
     }
     public static final class layout {
         public static final int chat=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int newscard=0x7f030002;
-        public static final int registration=0x7f030003;
+        public static final int loadspiner=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int newscard=0x7f030003;
+        public static final int newscardrevers=0x7f030004;
+        public static final int registration=0x7f030005;
     }
     public static final class mipmap {
         public static final int icon=0x7f020000;

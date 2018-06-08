@@ -28,15 +28,17 @@ namespace Chat.Android.Collection
         private IPresenterNews _presenter;
         private IRouterNews _router;
 
-        public ViewHolder(View itemView,IViewNews mainViews, Context ct) : base(itemView)
+        public ViewHolder(View itemView, IViewNews mainViews, NewsList _data, Context ct) : base(itemView)
         {
             cardViewControl = itemView as IViewNewsCard;
             _router = new RouterNews(ct);
 
             _presenter = new PresenterNews(cardViewControl, mainViews, _router);
  
-            _interactor = new InteractorNews(_presenter);
+            _interactor = new InteractorNews(_presenter, _data);
         }
+
+        
 
         public void SetData(int position)
         {

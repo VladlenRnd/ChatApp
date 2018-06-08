@@ -7,8 +7,8 @@ namespace Portable.Interface
 {
    public interface IGetNews
     {
-        News GetModelByIndex(int index);
+        Articles GetModelByIndex(int index);
 
-        News GetModelById(int id);
+        Articles GetModelById(int id);
     }
 }
